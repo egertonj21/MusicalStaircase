@@ -12,11 +12,15 @@ Features
 
 Web application built using React for an intuitive user interface.
 
+![alt text](image-1.png)
+
 <h2> Backend: </h2>
 
 Server-side integration written in Python, featuring MQTT communication for real-time device interaction.
 
 <h2> IoT Devices: </h2>
+
+![s](image-2.png)
 
 Developed device-specific code using Arduino to interface with sensors and actuators.
 Technologies Used
