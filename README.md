@@ -1,4 +1,4 @@
-Musical Staircase
+<h1 style="font-family: Arial, sans-serif; color: #4CAF50;">Musical Staircase</h1>
 This repository contains the complete codebase for my Musical Staircase project, developed as part of my Master's Dissertation at Queen's University Belfast. The project integrates both frontend and backend components for the web application, along with the separate device-specific code used to interact with IoT hardware.
 
 Project Overview
