@@ -6,14 +6,17 @@ The Musical Staircase project is an IoT-based interactive system designed to pla
 
 Score: 71% (Distinction Level for this Dissertation Module)
 Features
-Frontend:
+
+
+<h2> Frontend: </h2>
 
 Web application built using React for an intuitive user interface.
 
-Backend:
+<h2> Backend: </h2>
 
 Server-side integration written in Python, featuring MQTT communication for real-time device interaction.
-IoT Devices:
+
+<h2> IoT Devices: </h2>
 
 Developed device-specific code using Arduino to interface with sensors and actuators.
 Technologies Used
