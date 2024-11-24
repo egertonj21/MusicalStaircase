@@ -1,0 +1,295 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e0e0e0;
+  color: #212121;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* max-width: 1200px; Use a max width for better layout control */
+  flex: 1;
+}
+
+/* Header Styles */
+.header {
+  width: 100%;
+  padding: 20px;
+  background-color: #005493;
+  color: #ffffff;
+  text-align: center;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.header h1{
+  color: white;
+}
+.header-nav a {
+  margin: 0 15px; /* Adds space between the links */
+  padding: 10px 15px; /* Adds padding inside the links */
+  text-decoration: none;
+  color: #ffffff; /* Keep link color white */
+  transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+  color: #ffd700; /* Bright gold color for hover effect */
+  background-color: rgba(255, 255, 255, 0.1); /* Optional: add a subtle background color on hover */
+  border-radius: 5px; /* Optional: round the corners slightly */
+}
+
+/* Container Styles */
+.container, .LED-container, .ranges-container, .security-container, .game-container {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+}
+
+.container table {
+  margin: 0 auto; /* Centers the table horizontally */
+  color: rgb(0, 0, 0);
+  border-collapse: collapse;
+  width: auto; /* Let the table width adjust based on its content */
+  text-align: center;
+}
+
+.container table th,
+.container table td {
+  padding: 10px 15px; /* Adds padding inside each cell to space out the columns */
+  border: 1px solid #ccc; /* Optional: Adds borders for better separation */
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #212121;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #424242;
+}
+
+.button, button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #005493;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #003f7d;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  font-size: 1.1em;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #424242;
+}
+
+/* Footer Styles */
+.footer {
+  width: 100%;
+  padding: 20px;
+  background-color: #005493;
+  color: #ffffff;
+  text-align: center;
+  margin-top: auto;
+}
+
+.footer p {
+  color: white;
+}
+/* Additional Styles */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Toggle and Form Controls */
+.toggle-container, .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.toggle-label, .form-group label {
+  font-size: 1em;
+  color: #ffffff;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+.toggle-status {
+  margin-left: 10px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/* Simplified Reset */
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures the icons are on either side of the title */
+  width: 100%;
+  padding: 10px;
+}
+
+.header-icon {
+  width: 120px;  /* Adjust the size as needed */
+  height: 120px; /* Keep the aspect ratio */
+}
+
+.header-title {
+  flex-grow: 1; /* Make the title take up the available space */
+  text-align: center; /* Center the title between the icons */
+  color: #ffffff; /* Keep text color white for contrast */
+  font-size: 24px; /* Adjust font size as needed */
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-length-controls {
+  display: flex;
+  justify-content: center; /* Centers the buttons horizontally */
+  align-items: center; /* Aligns the buttons vertically within the container */
+  margin-top: 20px; /* Optional: Add some space above the controls */
+}
+
+.game-length-controls button {
+  margin: 0 10px; /* Adds space between the buttons */
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #005493;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.game-length-controls button:hover {
+  background-color: #003f7d;
+}
+
+#game-length-input {
+  width: 60px;
+}
+
+.about, .home {
+  min-height: 100vh; /* Make sure the section fills at least the full screen height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+  padding: 20px;
+  background-color: #ffffff; /* Set background color */
+  box-sizing: border-box;
+}
+
+.about h1, .home h1 {
+  font-size: 2.5em;
+  color: #212121;
+  margin-bottom: 20px;
+}
+
+.about p, .home p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #424242;
+  text-align: center; /* Center the text for a balanced look */
+  max-width: 800px; /* Optional: Limit the width of the text content */
+}
+
+.home {
+  min-height: 100vh; /* Ensure the home screen fills the entire viewport height */
+  display: flex;
+  justify-content: center; /* Centers any potential content horizontally */
+  align-items: center; /* Centers any potential content vertically */
+  padding: 20px;
+  background-color: #ffffff; /* Set background color */
+  box-sizing: border-box;
+  background-image: url('./img/image.webp'); 
+  background-size: cover; /* Ensure the background image covers the entire area */
+  background-position: center; /* Center the background image */
+}
+
+.App {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#dark{
+  color: black;
+}
